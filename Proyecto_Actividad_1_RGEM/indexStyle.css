@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.ContenedorAgregar{
+    margin: 10px;
+}
+.BtAgregar{
+    background-color: #4169e1;
+    border: none;
+    color: white;
+    margin: 8px;
+    border-radius: 5px;
+    width: 80px;
+    height: 32px;
+}
+
+#TxtAgregar{
+    border-radius: 5px;
+    height: 32px;
+    width: 35%;
+}
+
+.Container{
+    display: flex;
+}
+
+.ContenedorProcesos{
+    margin: 10px;
+    width: 50%;
+}
+
+.ChecksB{
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.BtEditar{
+    border-radius: 5px;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+    color: white;
+    height: 28px;
+    width: 48px;
+    font-weight: 200px;
+    border: none;
+    margin: 5px;
+    float: right;
+}
+
+.BtEliminar{
+    border-radius: 5px;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+    color: white;
+    height: 28px;
+    width: 64px;
+    font-weight: 200px;
+    margin: 5px;
+    border: none;
+    float: right;   
+}
+
+.ContenedorCompletados{
+    float: right;
+    width: 50%;
+    margin: 10px;
+}
+
+.ProcesosCompletados{
+    text-decoration: line-through;
+}
+
+
