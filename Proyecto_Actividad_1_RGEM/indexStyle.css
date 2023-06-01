@@ -12,7 +12,7 @@ body,html{
 .ContenedorAgregar{
     margin: 10px;
 }
-.BtAgregar{
+#BtAgregar{
     background-color: #4169e1;
     border: none;
     color: white;
@@ -32,7 +32,7 @@ body,html{
     display: flex;
 }
 
-.ContenedorProcesos{
+#ContenedorProcesos{
     margin: 10px;
     width: 50%;
 }
@@ -41,6 +41,16 @@ body,html{
     margin-top: 14px;
     margin-bottom: 14px;
 }
+
+.ParrafosProcesos{
+    display: inline;
+}
+
+.ParrafosProcesosCompletados{
+    display: inline;
+    text-decoration: line-through;
+}
+
 .BtEditar{
     border-radius: 5px;
     background-color: #A9A9A9;
@@ -67,14 +77,21 @@ body,html{
     float: right;   
 }
 
-.ContenedorCompletados{
+#ContenedorCompletados{
     float: right;
     width: 50%;
     margin: 10px;
 }
 
-.ProcesosCompletados{
-    text-decoration: line-through;
+#LimpiarTareas{
+    display: inline;
 }
+
+.TextoEditado{
+    border-radius: 5px;
+    height: 32px;
+    width: 100%;
+}
+
 
 

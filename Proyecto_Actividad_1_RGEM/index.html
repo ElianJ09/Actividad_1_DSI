@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="indexStyle.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
 
 
     <title>Actividad 1</title>
@@ -18,30 +18,31 @@
     <div class="ContenedorAgregar">
         <h2>Agregar Tarea</h2>
         <input type="text" id="TxtAgregar">
-        <button class="BtAgregar"><b>Agregar</b></button>
+        <button id="BtAgregar" onclick="AgregarTarea()"><b>Agregar</b></button>
     </div>
 
     <div class="Container">
 
-        <div class="ContenedorProcesos">
+        <div id="ContenedorProcesos">
             <h2>En proceso</h2>
-            <div class="PrimerProceso">
-                <input type="checkbox" class="ChecksB"> Beber 2L de Agua
-                <button class="BtEliminar"><b>Eliminar</b></button>
-                <button class="BtEditar"><b>Editar</b></button>
+            <div class="Procesos">
+                <input type="checkbox" class="ChecksB" onchange="CompletarTarea(event)"> <P class="ParrafosProcesos"> Beber 2L de Agua</P>
+                <button class="BtEliminar" onclick="EliminarTarea(event)"><b>Eliminar</b></button>
+                <button class="BtEditar" onclick="EditarTarea(event)"><b>Editar</b></button>
             </div>
     
-            <div class="SegundoProceso">
-                <input type="checkbox" class="ChecksB"> Mandar documentos de beca
-                <button class="BtEliminar"><b>Eliminar</b> </button>
-                <button class="BtEditar"><b>Editar</b></button>
+            <div class="Procesos">
+                <input type="checkbox" class="ChecksB" onchange="CompletarTarea(event)"> <P class="ParrafosProcesos">Mandar documentos de beca</P>
+                <button class="BtEliminar" onclick="EliminarTarea(event)"><b>Eliminar</b> </button>
+                <button class="BtEditar" onclick="EditarTarea(event)"><b>Editar</b></button>
             </div>
         </div>
-        <div class="ContenedorCompletados">
-            <h2>Completado</h2>
+        <div id="ContenedorCompletados">
+            <h2 style="display: inline;">Completado</h2> 
+            <span id="LimpiarTareas" onclick="EliminarLista()">Eliminar lista</span>
     
             <div class="ProcesosCompletados">
-                <input type="checkbox" class="ChecksB"> Pagar Netflix
+                <input type="checkbox" class="ChecksB" checked="True" disabled = "True"><p class="ParrafosProcesosCompletados"> Pagar Netflix</p> 
             </div>
     
         </div>
